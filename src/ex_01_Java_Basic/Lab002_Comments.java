@@ -7,5 +7,7 @@ public class Lab002_Comments {
         /*int a = 10;
         int b = 20;*/
         System.out.println("Now you learned how to comment the multiple lines");
+        System.out.println("Now you learned how to comment the multiple lines");
+
     }
 }
