@@ -2,7 +2,7 @@
 
     import java.util.Scanner;
 
-    public class Laboo6_table_using_printf {
+    public class Lab006_table_using_printf {
         public static void main(String[] args) {
            /* Print the table of 9 by using the printf command
             int a = 10; System.out.printf("You variable is %d",a);
