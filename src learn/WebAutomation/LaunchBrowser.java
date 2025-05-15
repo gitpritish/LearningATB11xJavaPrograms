@@ -1,23 +1,22 @@
 package WebAutomation;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LaunchBrowser {
 	public static void main(String[] args) {
-		WebDriverManager.chromedriver().setup();
 
-		// Initialize the Chrome browser
+		// step 1: https://googlechromelabs.github.io/chrome-for-testing/#stable
+		// step 2: export it and copy the pathname and then add in the script
+
+		System.setProperty("webdriver.chrome.driver","/Users/pritishkhedekar/Documents/driver/chromedriver-mac-arm64/chromedriver");
+		// WebDriverManager.chromedriver().setup();
+
 		WebDriver driver = new ChromeDriver();
-
-		// Open a website
 		driver.get("https://www.google.com");
 
-		// Print the title of the page
-		System.out.println("Page Title: " + driver.getTitle());
-
-		// Close the browser
-		driver.quit();
+		System.out.println("Launched Successfully");
+		driver.close();
 
 	}
 }
